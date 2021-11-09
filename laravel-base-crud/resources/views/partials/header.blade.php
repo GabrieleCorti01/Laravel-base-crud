@@ -9,10 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarsExample02">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" aria-current="page" href="#">Home</a>
+                    <a class="nav-link {{ request()->routeIs('comics.index') ? 'active' : '' }}" aria-current="page" href="{{ route('comics.index') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link {{ request()->routeIs('comics.create') ? 'active' : '' }}" href="{{ route('comics.create') }}">Crea</a>
                 </li>
             </ul>
             <form>

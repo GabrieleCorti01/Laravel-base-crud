@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Homepage')
+@section('title', 'Guest list')
 
 @section('main-section-id', 'comics-show')
 
@@ -12,14 +12,14 @@
                 <th scope="col">Titolo</th>
                 <th scope="col">Autore</th>
                 <th scope="col">Data</th>
-                <th scope="col">Description</th>
-                <th scope="col">Immagine</th>
             </tr>
         </thead>
         <tbody>
             @forelse ($comics as $comic)
                 <tr>
-                    <td></td>
+                    <td><a href="{{ route('comics.show', $comic->id) }}">{{$comic->title}}</a></td>
+                    <td>{{$comic->authore}}</td>
+                    <td>{{$comic->year}}</td>
                 </tr>
                 @empty
                 <tr>
