@@ -14,7 +14,7 @@
     @include('partials.header')
 
     <!-- main -->
-    <main class="container">
+    <main class="container">  
         <section id="@yield('main-section-id')" class="@yield('main-section-classes')">
             <div class="main-card">
                 @yield('main-content')

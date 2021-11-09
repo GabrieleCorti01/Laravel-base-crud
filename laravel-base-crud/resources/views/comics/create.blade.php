@@ -5,7 +5,10 @@
 @section('main-section-id', 'comics-create')
 
 @section('main-content')
-    <div class="card-title d-flex justify-content-between align-items-center">
+
+    @include('partials.editCreate')
+
+    <!-- <div class="card-title d-flex justify-content-between align-items-center">
         <h1>Crea un nuovo Fumetto</h1>
         <a href="{{ route('comics.index') }}">Torna alla lista </a>
     </div>
@@ -47,5 +50,5 @@
 
             </div>
         </form>
-    </div>
+    </div> -->
 @endsection
