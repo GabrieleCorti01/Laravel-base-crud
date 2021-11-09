@@ -20,6 +20,7 @@
                     <td><a href="{{ route('comics.show', $comic->id) }}">{{$comic->title}}</a></td>
                     <td>{{$comic->authore}}</td>
                     <td>{{$comic->year}}</td>
+                    <td><a href="{{ route('comics.edit', $comic) }}" class="btn-sm btn-secondary">Modifica</a></td>
                 </tr>
                 @empty
                 <tr>
