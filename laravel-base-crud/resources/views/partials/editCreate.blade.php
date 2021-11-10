@@ -5,7 +5,7 @@
             </div>
 
             <div class="card-body">
-                <form action="{{ $request->routeIs('comics.edit') ? route('comics.update', $comic) : route('comics.store}}" method="POST">
+                <form action="{{ $request->routeIs('comics.edit') ? route('comics.update', $comic) : route('comics.store')}}" method="POST">
                     @method('PATCH')
                     @csrf
                     <div class="row">
